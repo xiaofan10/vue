@@ -14,6 +14,7 @@
     "babel-eslint": "^10.0.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^8.0.5",
+    "babel-plugin-component": "^1.1.1",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.7.0",
     "babel-preset-env": "^1.7.0",
@@ -45,6 +46,7 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "vue": "^2.6.10",
+    "vue-echarts": "^4.0.1",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.29.6",
@@ -55,7 +57,9 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "echarts": "^4.2.1",
+    "mint-ui": "^2.2.13",
     "vue": "^2.6.10",
-    "echarts": "^4.2.1"
+    "vue-router": "^3.0.3"
   }
 }

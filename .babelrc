@@ -3,6 +3,15 @@
     "env"
   ],
   "plugins": [
-    "transform-vue-jsx"
+    "transform-vue-jsx",
+    [
+      "component",
+      [
+        {
+          "libraryName": "mint-ui",
+          "style": true
+        }
+      ]
+    ]
   ]
 }

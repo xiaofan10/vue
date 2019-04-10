@@ -1,9 +1,6 @@
 
-const path = require('path');
-
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const isDev = process.env.NODE_ENV === 'development';
-
+const path = require('path')
+const isDev = process.env.NODE_ENV === 'development'
 const config = {
   mode: isDev ? 'development' : 'production',
   entry: {
@@ -13,6 +10,9 @@ const config = {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].bundle.[hash:8].js', // dev环境使用chunkHash会报错
     chunkFilename: '[name].bundle.js',
+  },
+  resolve: {
+    extensions: ['.vue', '.js', '.jsx', '.json'],
   },
   module: {
     rules: [
@@ -38,4 +38,4 @@ const config = {
   },
 }
 
-module.exports = config;
+module.exports = config

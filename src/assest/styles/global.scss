@@ -1,5 +1,6 @@
 $highlight-color: #F90;
 $baseFontsize: 16px;
+
 @function px2rem($pixel) {
   @if (unitless($pixel)) {
     $pixel: $pixel*1px;
@@ -7,18 +8,17 @@ $baseFontsize: 16px;
   @return $pixel/$baseFontsize *1rem;
 }
 
-// @mixin bgs($url)
-//   background-image: url($url);
-//   -webkit-background-size:100%;
-//   background-size:100%;
-@mixin button {
-  color: #f00;
+@mixin bgs($url) {
+  background-image: url($url);
+  -webkit-background-size:100%;
+  background-size:100%;
 }
 
 html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
-  // font-size: $baseFontsize;
 }
 
 
